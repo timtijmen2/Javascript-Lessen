@@ -1,0 +1,20 @@
+#kittypic{
+    width: 300px;
+    
+}
+body{
+    margin-top: 100px;
+}
+
+#kittybutton{
+    background-color: lightblue;
+    width: 100px;
+    margin: 20px;
+    
+}
+
+#kittybutton:hover{
+    background-color: lightcoral;
+    width: 800;
+    color: white;
+}

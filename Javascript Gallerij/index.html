@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Foto Gallerij</h1>
+    <div id="kittybutton" onclick="kittyClick()">Click For Kitty</div>
+    <img id="kittypic" src="img/grey_cat.jpg" alt="grey cat">
+
+    <script>
+        var i = 0;
+        var img1 = "img/grey_cat.jpg";
+        var img2 = "img/cuddle_cat.jpg";
+        var img3 = "img/white_brown_cat.jpg";
+        var img4 = "img/white_red_cat.jfif";
+
+        function kittyClick(){
+            
+            var kittyElement = document.getElementById("kittypic");
+            i = i + 1
+            console.log(i);
+            if(i == 0){
+                kittyElement.src = img1;
+            }
+            if(i == 1){
+                kittyElement.src = img2;
+            }
+            if(i == 2){
+                console.log("Yes")
+                kittyElement.src = img3;
+            }
+            if(i == 3){
+                kittyElement.src = img4;
+            }
+            if(i == 4){
+                i == 0;
+            }
+            document.getElementById("kittypic").src = img2;
+        }
+        
+    </script>
+</body>
+</html>
